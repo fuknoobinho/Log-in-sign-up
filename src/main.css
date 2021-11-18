@@ -1,0 +1,133 @@
+body{
+    --color-primary: #1f1f1f;
+    --color-primary-dark: #474747;
+    --color-secondary: #00ffff;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-reduis: 4px;
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: url(./background.jpg);
+    background-size: cover;
+}
+
+.contner {
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgb(0, 255, 242);
+    border-radius: var(--border-reduis);
+    background: #000000;
+    border-radius: 33px;
+}
+
+.contner,
+.form__input,
+.form__button{
+    font: 500 1rem "quickstand" , sans-serif;
+    font-family: sans-serif;
+}
+.form--hidden {
+    display: none;
+}
+
+.form > *:first-child{
+    margin-top: 0;
+}
+.form > *:last-child{
+    margin-bottom: 0;
+}
+
+.form__title {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--color-secondary);
+}
+
+.form__message{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__message--success{
+    color: var(--color-success);
+}
+
+.form__message--error {
+    color: var(--color-error);
+}
+
+.form__input-group {
+    margin-bottom: 1rem;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1px;
+    box-sizing: var(--border-reduis);
+    border-radius: 44px;
+    border: 2px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus{
+    border-color: var(--color-secondary);
+    background: #ffffff;
+    
+}
+
+.form__input--error {
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+.form__input-error-message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+     }
+
+     .form__button {
+         width: 100%;
+         padding: 1rem 1rem ;
+         font-weight: bold;
+         font-size: 1.1rem;
+         color: #000000;
+         border: var(--color-secondary);
+         border-radius: var(--border-reduis);
+         border-radius: 33px;
+         border-color: var(--color-secondary) 2px px;
+         outline: none;
+         cursor: pointer;
+         background: #00ffff;
+     }
+     
+     .form__button:hover {
+         background: var(--color-primary-dark);
+     }
+     .form__button:active{
+         transform: scale(0.98);
+     }
+
+     .form__text {
+         text-align: center;
+     }
+
+     .form__link {
+         color: #6b6b6b;
+         text-decoration: none;
+         cursor: pointer;
+     }
+
+     .form__link:hover {
+         text-decoration: underline;
+     }
